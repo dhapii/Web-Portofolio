@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+    <link rel="stylesheet" href="portofolio.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script> 
+</head>
+<body>
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">Portofolio<span>AkbarTZy.</span></a>
+      <div class="navbar-nav">
+          <a href="#home">Home</a>
+          <a href="#AboutMe">AboutMe</a>
+          <a href="#skills">Keahlian</a>
+          <a href="#contact">Contact</a>
+      </div>
+      <div class="navbar-extra">
+       <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+    <section class="hero" id="home">
+      <main class="content">
+        <h1>Hai Guwa <span>AkbarTzy</span></h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, libero?</p>
+        <a href="#" class="cta">ContactMe</a>
+      </main>
+    </section>
+    <section id="AboutMe" class="AboutMe">
+      <h2><span>Tentang</span> Aku</h2>
+      <div class="row">
+        <div class="about-img">
+          <img src="image/WhatsApp Image 2024-06-23 at 08.18.45_ba621c05.jpg" alt="siuuu" >
+        </div>
+        <div class="content">
+          <h3>Siapakah Sosok <span>AkbarTZy</span></h3>
+          <p>Akbar is someone who is currently working in the field of web programming, he is not lazy but if there is no benefit he will not do it</p>
+          <p>Saya adalah seseorang yang suka membaca dan belajar serta cepat beradaptasi dengan lingkungan yang baru.beliau adalah orang yang sangat terkenal di masalalu sebelum ia bereinkarnasi.Dahulu ia pernah yang mengeluarkan kata-kata yang dapat merubah dunia"Jika Hidup Seperti Roda Yang Berputar Maka Aku Akan Memutar Roda Sampai Aku Di Atas Dan Aku Akan Merusak Rodanya Agar Tidak Kembali Kebawah".Kata-katanya Menuai Banyak Kontroversi.Lalu Apakah Mustahil Melakukanya?Tidak jika kamu tau caranya</p>
+        </div>
+      </div>
+    </section>
+    <section id="skills" class="skills"> <!-- Changed from menu to skills -->
+      <h2>Keahlian</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, fugit perferendis aut tempora in porro!</p>
+      <div class="row">
+          <div class="skills-card"> <!-- Changed from menu-card to skills-card -->
+              <img src="image/projek-removebg-preview.png" class="skills-card-image" alt="Web Developer"> <!-- Changed from menu-card-image to skills-card-image -->
+              <h3 class="skills-card-title">- Web Developer -</h3> <!-- Changed from menu-card-title to skills-card-title -->
+              <p class="skills-card-desc">"Kami menawarkan pembuatan situs web kustom yang disesuaikan sepenuhnya untuk memenuhi kebutuhan unik Anda, baik untuk bisnis kecil maupun perusahaan besar."</p> <!-- Changed from menu-card-desk to skills-card-desc -->
+          </div>
+          <div class="skills-card"> <!-- Changed from menu-card to skills-card -->
+              <img src="image/service1.jpg" class="skills-card-image" alt="Machine Learning" width="500px"> <!-- Changed from menu-card-image to skills-card-image -->
+              <h3 class="skills-card-title">- Machine Learning -</h3> <!-- Changed from menu-card-title to skills-card-title -->
+              <p class="skills-card-desc">"Kami mengembangkan solusi machine learning yang memberikan wawasan berbasis data untuk membantu Anda mengambil keputusan yang lebih baik dan lebih cepat."</p> <!-- Changed from menu-card-desk to skills-card-desc -->
+          </div>
+      </div>
+  </section>
+<section class="contact" id="contact">
+  <h2>Kontak <span>Kami</span></h2>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, fugit perferendis aut tempora in porro!</p>
+  <div class="row">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.1202435905843!2d110.36479467436129!3d-7.777072892242454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a58373fffffff%3A0xa4ec1ca156555926!2sSMK%20Negeri%202%20Yogyakarta!5e0!3m2!1sen!2sid!4v1719042851177!5m2!1sen!2sid" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+      <form action="">
+          <div class="input-group">
+              <i data-feather="user"></i>
+              <input type="text" placeholder="Nama">
+          </div>
+          <div class="input-group">
+              <i data-feather="mail"></i>
+              <input type="email" placeholder="Email">
+          </div>
+          <div class="input-group">
+              <i data-feather="phone"></i>
+              <input type="tel" placeholder="No HP">
+          </div>
+          <button type="submit" class="btn">Kirim</button>
+      </form>
+  </div>
+</section>
+<footer>
+  <div class="sosials">
+    <a href="">
+      <i data-feather="instagram"></i></a>
+    <a href="">
+      <i data-feather="youtube"></i></a>
+  </div>
+  <div class="links">
+    <a href="#home">Home</a>
+    <a href="#AboutMe">AboutMe</a>
+    <a href="#skills">Keahlian</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <div class="credit">
+    <p>Created by<span>AkbarTZy</span>. | &copy; 2024</p>
+  </div>
+</footer>
+    <script>
+        feather.replace();
+      </script>
+      <script src="script.js"></script>
+</body>
+</html>
