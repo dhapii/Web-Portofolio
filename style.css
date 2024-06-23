@@ -245,6 +245,11 @@ html {
   background-color: #1b1b1b;
 }
 
+.contact {
+  padding: 4rem 7%;
+  background-color: #1b1b1b;
+}
+
 .contact h2 {
   font-size: 3rem;
   text-align: center;
@@ -266,61 +271,63 @@ html {
 
 .contact .row {
   display: flex;
-  align-items: center;
+  align-items: flex-start; /* Memastikan elemen berada di bagian atas */
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
 .contact .map {
-  flex: 1;
-  height: 400px;
+  flex: 1 1 48%; /* Lebar map dan form dibuat seimbang */
+  height: 100%; /* Membuat map mengikuti tinggi form */
+  min-height: 400px; /* Menentukan tinggi minimum */
   border: 0;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   margin: 0.5rem;
 }
 
-.contact .row .map {
-  flex: 1 1 45rem;
-  width: 100%;
-  object-fit: cover;
-}
-
 .contact form {
-  flex: 1;
-  padding: 1rem;
+  flex: 1 1 48%; /* Lebar map dan form dibuat seimbang */
+  padding: 2rem;
   background-color: #2d2d2d;
   border-radius: 10px;
   margin: 0.5rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  min-height: 400px; /* Menentukan tinggi minimum untuk form */
+  display: flex;
+  flex-direction: column; /* Mengatur elemen dalam form secara vertikal */
+  justify-content: space-between; /* Memastikan elemen dalam form tidak saling menumpuk */
 }
 
 .contact .input-group {
   position: relative;
   margin-bottom: 1rem;
+  height: 60px; /* Memastikan input cukup tinggi */
 }
 
 .contact .input-group i {
   position: absolute;
-  top: 50%;
-  left: 1rem;
-  transform: translateY(-50%);
+  top: 10px; /* Mengatur jarak vertikal ikon dari atas input group */
+  left: 10px; /* Mengatur jarak horizontal ikon dari kiri input group */
   color: var(--primary);
+  font-size: 1.5rem; /* Ukuran ikon */
 }
 
 .contact .input-group input {
   width: 100%;
   padding: 1rem;
-  padding-left: 3rem;
+  padding-left: 2.5rem; /* Tambahkan ruang untuk ikon di kiri */
   border-radius: 5px;
   background-color: #3d3d3d;
   color: #fff;
   border: none;
+  margin-top: 0; /* Menyesuaikan margin atas jika diperlukan */
 }
 
 .contact .btn {
   display: inline-block;
   margin-top: 1.4rem;
+  align-self: center; /* Menempatkan tombol di tengah */
   padding: 0.8rem 1.6rem;
   background-color: var(--primary);
   color: #fff;
