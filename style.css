@@ -245,11 +245,6 @@ html {
   background-color: #1b1b1b;
 }
 
-.contact {
-  padding: 4rem 7%;
-  background-color: #1b1b1b;
-}
-
 .contact h2 {
   font-size: 3rem;
   text-align: center;
@@ -277,23 +272,24 @@ html {
 }
 
 .contact .map {
-  flex: 1 1 48%; /* Lebar map dan form dibuat seimbang */
-  height: 100%; /* Membuat map mengikuti tinggi form */
-  min-height: 400px; /* Menentukan tinggi minimum */
+  flex: 1 1 48%;
+  height: auto;
+  min-height: 500px; /* Tinggi minimum untuk map */
   border: 0;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   margin: 0.5rem;
+  display: flex;
 }
 
 .contact form {
-  flex: 1 1 48%; /* Lebar map dan form dibuat seimbang */
+  flex: 1 1 48%;
   padding: 2rem;
   background-color: #2d2d2d;
   border-radius: 10px;
   margin: 0.5rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  min-height: 400px; /* Menentukan tinggi minimum untuk form */
+  min-height: 500px; /* Tinggi minimum untuk form */
   display: flex;
   flex-direction: column; /* Mengatur elemen dalam form secara vertikal */
   justify-content: space-between; /* Memastikan elemen dalam form tidak saling menumpuk */
@@ -307,7 +303,7 @@ html {
 
 .contact .input-group i {
   position: absolute;
-  top: 10px; /* Mengatur jarak vertikal ikon dari atas input group */
+  top: 15px; /* Mengatur jarak vertikal ikon dari atas input group agar lebih ke atas */
   left: 10px; /* Mengatur jarak horizontal ikon dari kiri input group */
   color: var(--primary);
   font-size: 1.5rem; /* Ukuran ikon */
@@ -321,7 +317,7 @@ html {
   background-color: #3d3d3d;
   color: #fff;
   border: none;
-  margin-top: 0; /* Menyesuaikan margin atas jika diperlukan */
+  margin-top: 0;
 }
 
 .contact .btn {
@@ -343,6 +339,7 @@ html {
 .contact .btn:hover {
   background-color: var(--accent);
 }
+
 footer {
   background-color: var(--primary);
   text-align: center;
@@ -466,3 +463,10 @@ footer .credit span {
     font-size: 55%;
   }
 }
+/*
+cara menggunakan git
+1.git init
+2.git add .
+3.git commit -m "example"
+4.git push origin main
+*/
