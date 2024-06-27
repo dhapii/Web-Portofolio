@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Portfolio</title>
+    <style>
+       body {
+    background-image: url("image/neven-krcmarek-3ym-ev0Pe58-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; /* Memusatkan background */
+    color: black;
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+:root {
+    --primary: #b6895b;
+    --secondary: #000000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+    background-color: rgba(1, 1, 1, 0.8);
+    border-bottom: 1px solid var(--primary);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    color: white;
+    max-width: 100%;
+    font-size: xx-large;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 150px; /* Adjusted for fixed navbar */
+    padding: 2rem;
+    padding-bottom: 100px; /* Added padding to give space for footer */
+    height: auto;
+    gap: 2rem; /* Jarak antar elemen konten dan tombol */
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 100%;
+    gap: 2rem; /* Jarak antara dua konten */
+    flex-wrap: wrap; /* Membuat elemen bisa wrapping di layar kecil */
+}
+
+.content {
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 2rem;
+    width: 40%;
+    min-width: 300px;
+    margin: 1rem;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    color: var(--secondary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content h2 {
+    margin-bottom: 1rem;
+    color: var(--primary);
+    font-size: 2rem;
+}
+
+.content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: var(--secondary);
+    margin-bottom: 1rem;
+}
+
+.button-container {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.button-container button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.button-container button:hover {
+    background-color: var(--secondary);
+    color: var(--primary);
+}
+
+.footer {
+    background-color: rgba(1, 1, 1, 0.8);
+    color: white;
+    padding: 1.4rem 7%;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-top: 1px solid var(--primary);
+    z-index: 9999;
+}
+
+/* Media Queries untuk responsivitas */
+@media (max-width: 768px) {
+    body {
+        background-position: top; /* Latar belakang menyesuaikan untuk layar lebih kecil */
+    }
+    .content {
+        width: 80%; /* Lebar menyesuaikan untuk layar kecil */
+    }
+    .button-container {
+        flex-direction: column; /* Tombol berbaris secara vertikal pada layar kecil */
+        gap: 0.5rem; /* Jarak lebih kecil antara tombol */
+    }
+    .navbar {
+        font-size: large; /* Kurangi ukuran font pada navbar */
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        background-position: center top; /* Latar belakang tetap terlihat di layar sangat kecil */
+        background-size: auto 100%; /* Mengubah background size untuk menyesuaikan tinggi */
+    }
+    .container {
+        margin-top: 100px; /* Kurangi margin atas untuk layar yang sangat kecil */
+        padding: 1rem; /* Kurangi padding untuk layar yang lebih kecil */
+        padding-bottom: 80px; /* Tambahkan lebih banyak padding bawah */
+    }
+    .navbar {
+        font-size: medium; /* Ukuran font lebih kecil lagi pada navbar */
+    }
+    .content {
+        width: 90%; /* Lebar lebih kecil untuk layar yang sangat kecil */
+    }
+    .content h2 {
+        font-size: 1.5rem; /* Ukuran font lebih kecil untuk judul */
+    }
+    .content p {
+        font-size: 1rem; /* Ukuran font lebih kecil untuk paragraf */
+    }
+    .button-container button {
+        font-size: 0.9rem; /* Ukuran font lebih kecil untuk tombol */
+    }
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <marquee>Jasa Yang Ditawarkan Oleh Website ini</marquee>
+    </div>
+    <div class="container">
+        <div class="content-wrapper">
+            <div class="content">
+                <h2>Web Programming</h2>
+                <p>Web programming involves building and maintaining websites. It encompasses various aspects including web design, web content development, client-side/server-side scripting, and network security configuration. Our services provide modern, responsive, and efficient web solutions tailored to your needs.</p>
+                <div class="button-container">
+                    <button>Learn More</button>
+                    <button>Contact Us</button>
+                </div>
+            </div>
+            <div class="content">
+                <h2>Machine Learning</h2>
+                <p>Machine learning is a branch of artificial intelligence focused on building applications that learn from data and improve their accuracy over time without being programmed to do so. We specialize in developing intelligent systems that can perform tasks such as predictive analytics, data mining, and image recognition.</p>
+                <div class="button-container">
+                    <button>Learn More</button>
+                    <button>Contact Us</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        &copy; 2024 Web Portfolio | All rights reserved.
+    </div>
+</body>
+
+</html>
